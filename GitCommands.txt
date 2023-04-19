@@ -1,0 +1,47 @@
+$ git clone <repository URL> :
+    The git clone is a command-line utility which is used to make a local copy of a remote or local repository. It accesses the repository through a remote URL.
+
+$ git status :
+    The git status command is used to display the state of the repository and staging area. It allows us to see the tracked, untracked files and changes. This command will not show any commit records or information.
+
+$ git diff :
+    It compares the difference between local area and the staging area. The version control system stands for working with a modified version of files. So, the diff command is a useful tool for working with Git.
+
+$ git add <File name> 
+$ git add -A OR $ git add . :
+    The git add command is used to add file contents to the Staging Area. This command updates the current content of the working tree to the staging area. It also prepares the staged content for the next commit. Every time we add or update any file in our project, it is required to forward updates to the staging area.
+
+$ git restore --staged <File name> :
+    Restore specified paths in the working tree with some contents from a restore source. If a path is tracked but does not exist in the restore source, it will be removed to match the source. The command can also be used to restore the content in the index with --staged, or restore both the working tree and the index with --staged --worktree.
+
+$ git commit  
+$ git commit -a  
+$ git commit -m "Commit message."
+$ git commit -am "Commit message."
+$ git commit -amend :
+    It is used to record the changes in the repository. It is the next command after the git add. Every commit contains the index data and the commit message. Every commit forms a parent-child relationship. When we add a file in Git, it will take place in the staging area. A commit command is used to fetch updates from the staging area to the repository. The staging and committing are co-related to each other. Staging allows us to continue in making changes to the repository, and when we want to share these changes to the version control system, committing allows us to record these changes.
+
+$ git remote set-url origin <SSH url>
+    idk.
+
+$ git log :
+    Git log is a utility tool to review and read a history of everything that happens to a current repository. Multiple options can be used with a git log to make history more specific. Generally, the git log is a record of commits.
+
+$ git branch : 
+    You can demonstrate how to view a list of available branches by executing the git branch command and switch to a specified branch.
+
+$ git checkout <branchname> : 
+    Now, you have the list of available branches. To switch between branches.
+
+$ git checkout -b <branchname> : to Create and Switch Branch
+    In Git, the term checkout is used for the act of switching between different versions of a target entity. The git checkout command is used to switch between branches in a repository. Be careful with your staged files and commits when switching between branches. The git checkout command operates upon three different entities which are files, commits, and branches. Sometimes this command can be dangerous because there is no undo option available on this command.
+
+$ git fetch :
+    It is used to fetch the updates from remote-tracking branches and put in local directory (not apply). Additionally, we can get the updates that have been pushed to our remote branches to our local machines. As we know, a branch is a variation of our repositories main code, so the remote-tracking branches are branches that have been set up to pull and push from remote repository.
+
+$ git merge :
+    It is used to merge the updates from remote-tracking branches in local directory (not apply). it joins two or more development history together. The git merge command facilitates you to take the data created by git branch and integrate them into a single branch. Git merge will associate a series of commits into one unified history. Generally, git merge is used to combine two branches.
+
+$ git pull <option> [<repository URL><refspec>...] :
+    The term pull is used to receive data from GitHub. It fetches and merges changes from the remote server to your working directory. The git pull command is used to pull a repository.
+

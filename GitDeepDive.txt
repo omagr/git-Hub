@@ -1,0 +1,10 @@
+Git Commit : 
+    Changed File (whole file) ===>  captures a snapshot of the project's currently staged changes.
+    commit message ===>  context about the commit.
+    committer ===>  username and email of the person who make this commit.
+    commit date ===>  time in millisecond of the commit.
+    parent commit ===> information about the last commit of the that repository
+    commit id ===> then the hash of the commit is made based on the above information called.
+
+Git Branches :
+Branch is a pointer which points to the current commit

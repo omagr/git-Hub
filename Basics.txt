@@ -1,0 +1,51 @@
+What is version control?
+    Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help to manage changes to source code over time.
+
+Why we need version control?
+    1. Version control keeps is the practice of track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
+    2. it helps solve teams kinds of problems, tracking every individual change by each contributor and helping prevent concurrent work from conflicting.
+    3. and in all software development, any change can introduce new bugs on its own and new software can't be trusted until it's tested. So testing and development proceed together until a new version is ready.
+
+What is the principle of version control?
+    Current State Of Code Base ====> Initial State of Code Base + Sum of All the Changes(+/-/*) in Code Base.
+
+What is version control System?
+    Version Control Systems (VCS) have seen great improvements over the past few decades and some are better than others. VCS are sometimes known as SCM (Source Code Management) tools or RCS (Revision Control System). One of the most popular VCS tools in use today is called Git. Git is a Distributed VCS, a category known as DVCS, more on that later. Like many of the most popular VCS systems available today, Git is free and open source.
+
+What is the Benefits of version control systems
+    1. A complete long-term change history of every file. This means every change made by many individuals over the years. Changes include the creation and deletion of files as well as edits to their contents. Different VCS tools differ on how well they handle renaming and moving of files. This history should also include the author, date and written notes on the purpose of each change. Having the complete history enables going back to previous versions to help in root cause analysis for bugs and it is crucial when needing to fix problems in older versions of software. If the software is being actively worked on, almost everything can be considered an "older version" of the software.
+    2. Branching and merging. Having team members work concurrently is a no-brainer, but even individuals working on their own can benefit from the ability to work on independent streams of changes. Creating a "branch" in VCS tools keeps multiple streams of work independent from each other while also providing the facility to merge that work back together, enabling developers to verify that the changes on each branch do not conflict. Many software teams adopt a practice of branching for each feature or perhaps branching for each release, or both. There are many different workflows that teams can choose from when they decide how to make use of branching and merging facilities in VCS.
+    3. Traceability. Being able to trace each change made to the software and connect it to project management and bug tracking software such as Jira, and being able to annotate each change with a message describing the purpose and intent of the change can help not only with root cause analysis and other forensics. Having the annotated history of the code at your fingertips when you are reading the code, trying to understand what it is doing and why it is so designed can enable developers to make correct and harmonious changes that are in accord with the intended long-term design of the system. This can be especially important for working effectively with legacy code and is crucial in enabling developers to estimate future work with any accuracy.
+
+Evolution of VCS
+    Diff Based : 
+        1. it saves code base in a main path and afterwards every change related to the base save in diiferent path, whenever dev need the cuurent state of code base these software calculated it. 
+        2. it saves a lot of storage because it saves only changes.
+        3. comparatively too slow.
+
+    Centralized :
+        1. it saves a central code base and devs copy only those files they needs and after the changes they save file in the central code base (not locally).
+        2. it is easy to maintain, manage, monitor and secure the only one central code base.
+        3. devs needs to be connect to the internet everytime.
+        4. comparatively slow.
+        5. SVM.
+
+    Distributed :
+        1. it is a form of version control in which the complete codebase, including its full history, is mirrored on every developer's computer. Compared to centralized version control, this enables automatic management branching and merging, speeds up most operations (except pushing and pulling), improves the ability to work offline, and does not rely on a single location for backups.
+        2. it copies not only some files but the whole code base to every working devs machines after the changes it save that copy, and present the that copy.
+        3. devs don't need to be connect to the internet everytime.
+        4. it is easy to maintain, manage, monitor and secure the only one central code base.
+        5. comparatively fast.
+        6. GIT.
+
+Emergence of Git?
+    Git is De-Centralized Distributed version control System.
+    1. it installed and maintained in your local machines 
+    2. too fast.
+    3. take too much storage.
+
+Need of Github?
+    GitHub is open source Cloud-based hosting service 
+    1. GitHub is designed as a Git repository hosting service.
+    2. GitHub is exculsively cloud-Based
+    3. can share code to the public and give the power to make edit, fork or revison it.
